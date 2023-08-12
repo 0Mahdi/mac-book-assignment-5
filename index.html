@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Book-Assignment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="p-5">
+        <div class="row justify-content-evenly">
+          <div class="col-4">
+            <img src="images/mac.png" class="img-fluid rounded-start" style="width: 480px;">
+          </div>
+          <div class="col-4">
+            <div class="card-body">
+              <h2 class="card-title">Customize your Blue  24-inch  iMac with Apple M1 chip.</h2>
+              <p class="card-text pt-3"><small class="text-muted">The Apple M1 Pro 8-Core is a System on a Chip (SoC) from Apple that is found in the late 2021 MacBook Pro 14 and 16-inch models. It offers 8 cores from the 10 available in the chip divided in six performance cores (P-cores with 600 - 3220 MHz) and four power-efficiency cores (E-cores with 600 - 2064 MHz).</small></p>
+            </div>
+            <!-- Button Start -->
+            <div class="d-grid gap-2 d-md-block pt-5">
+                <h5 class="card-title pb-2">Memory</h5>
+                <button id="zeroCost"  type="button" class="btn btn-outline-primary" data-bs-toggle="button">8GB unified memory</button>
+                <button id="memory" type="button" class="btn btn-outline-primary" data-bs-toggle="button">16GB unified memory</button>
+            </div>
+            <div class="d-grid gap-2 d-md-block pt-5">
+                <h5 class="card-title pb-2">Storage</h5>
+                <button id="zeroStor" type="button" class="btn btn-outline-primary" data-bs-toggle="button">256GB SSD storage</button>
+                <button id="mediumStor" type="button" class="btn btn-outline-primary" data-bs-toggle="button">500GB SSD storage</button>
+                <button id="largeStor" type="button" class="btn btn-outline-primary" data-bs-toggle="button">1TB SSD storage</button>
+            </div>
+            <div class="d-grid gap-2 d-md-block pt-5">
+                <h5 class="card-title pb-2">Chose your delivery option</h5>
+                <button id="freeDelivery" type="button" class="btn btn-outline-primary" data-bs-toggle="button">Friday, Aug 25 FREE Delivery</button>
+                <button id="deliveryCost" type="button" class="btn btn-outline-primary" data-bs-toggle="button">Friday, Aug 21 Delivery charge $20</button>
+            </div>
+
+            <!-- Total Amount -->
+            <table class="table mt-5">
+                <tbody>
+                  <tr>
+                    <td>Best Price</td>
+                    <td>$1299</td>
+                  </tr>
+                  <tr>
+                    <td>Extra Memory Cost</td>
+                    <td>$<span id="extra-memo-cost">0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Extra Storage Cost</td>
+                    <td>$<span id="extra-storage-cost">0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Delivery Charge</td>
+                    <td>$<span id="deliveryCharge">0</span></td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td>Total Price</td>
+                    <td><span id="totalPrice">1299.00</span></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <hr>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
